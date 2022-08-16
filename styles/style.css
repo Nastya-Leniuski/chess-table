@@ -1,0 +1,83 @@
+table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+th,td{
+    border: 1px solid black;
+}
+
+thead {
+    height: 18px;
+    background-color: #beef6b;
+}
+
+th:first-child{
+    width: 15px;
+}
+
+th:last-child{
+    width: 15px;
+}
+
+tr:nth-child(1) td:nth-child(3), tr:nth-child(1) td:nth-child(8) {
+    background: center/ contain url(../images/knight-black.png) no-repeat;
+}
+tr:nth-child(1) td:nth-child(2), tr:nth-child(1) td:nth-child(9) {
+    background: center/ contain url(../images/rook-black.png) no-repeat;
+}
+tr:nth-child(1) td:nth-child(4), tr:nth-child(1) td:nth-child(7) {
+    background: center/ contain url(../images/bishop-black.png) no-repeat;
+}
+tr:nth-child(1) td:nth-child(5) {
+    background: center/ contain url(../images/queen-black.png) no-repeat;
+}
+tr:nth-child(1) td:nth-child(6) {
+    background: center/ contain url(../images/king-black.png) no-repeat;
+}
+
+tr:nth-child(2) td {
+    background: center/ contain url(../images/pawn-black.png) no-repeat;
+}
+
+tr:nth-child(8) td:nth-child(3), tr:nth-child(8) td:nth-child(8) {
+    background: center/ contain url(../images/knight.png) no-repeat;
+}
+tr:nth-child(8) td:nth-child(2), tr:nth-child(8) td:nth-child(9) {
+    background: center/ contain url(../images/rook.png) no-repeat;
+}
+tr:nth-child(8) td:nth-child(4), tr:nth-child(8) td:nth-child(7) {
+    background: center/ contain url(../images/bishop.png) no-repeat;
+}
+tr:nth-child(8) td:nth-child(5) {
+    background: center/ contain url(../images/queen.png) no-repeat;
+}
+tr:nth-child(8) td:nth-child(6) {
+    background: center/ contain url(../images/king.png) no-repeat;
+}
+
+tr:nth-child(7) td {
+    background: center/ contain url(../images/pawn.png) no-repeat;
+}
+
+tr:nth-child(odd) td:nth-child(odd){
+    background-color: rgb(245, 196, 106);
+}
+tr:nth-child(even) td:nth-child(even){
+    background-color: rgb(245, 196, 106);
+}
+
+td:first-child{
+    background: #beef6b !important;
+}
+
+td:last-child{
+    background: #beef6b !important;
+}
+
+tfoot tr td {
+    height: 18px;
+    background: #beef6b !important;
+}
